@@ -182,7 +182,7 @@ class QueuingSimulator:
                 server_status, time_next_event, num_customer_delayed = self.arrive(is_idle, num_in_queue, time_next_event, sim_time, mean_interarrival)
 
             elif next_event_type == 2:
-                self.depart()
+                self.depart()  # Need fix
 
             if next_event_type == 3:
                 self.report()  # replace with simple output of values and FUCK OFF
